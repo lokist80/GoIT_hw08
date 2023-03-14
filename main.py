@@ -3,7 +3,7 @@ import collections
 
 NOW = datetime.now()
 start_data = datetime(year=NOW.year, month=NOW.month, day=NOW.day, hour=0)
-weekdays_dict = {(start_data + timedelta(days=i)).strftime('%A'): [] for i in range(7) if i not in (4, 5)}
+weekdays_dict = {(start_data + timedelta(days=i)).strftime('%A'): [] for i in range(7)}
 
 Users = collections.namedtuple('Users', ['name', 'birthday'])
 users = [
